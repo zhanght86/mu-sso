@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ldap="http://www.springframework.org/schema/ldap"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:ldap="http://www.springframework.org/schema/ldap"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/ldap http://www.springframework.org/schema/ldap/spring-ldap.xsd">
 
     <ldap:context-source id="contextSource"
                          url="ldap://192.168.1.212:389"
                          password="123456"
-                         username="ldapuser1"
-                         base="dc=my-domain,dc=com"/>
+                         username="cn=Manager,dc=my-domain,dc=com"
+                         base="ou=People,dc=my-domain,dc=com"/>
+
     <ldap:ldap-template id="ldapTemplate" context-source-ref="contextSource" />
 
 </beans>
