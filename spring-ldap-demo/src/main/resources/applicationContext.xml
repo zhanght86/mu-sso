@@ -8,7 +8,7 @@
                          url="ldap://192.168.1.212:389"
                          password="123456"
                          username="cn=Manager,dc=my-domain,dc=com"
-                         base="ou=People,dc=my-domain,dc=com"/>
+                         base="dc=my-domain,dc=com"/>
 
     <ldap:ldap-template id="ldapTemplate" context-source-ref="contextSource" />
 
