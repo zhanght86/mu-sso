@@ -1,11 +1,10 @@
 package com.muyh.controller;
 
-import com.muyh.entity.Person;
+import com.muyh.bean.Person;
 import com.muyh.ldap.LdapDemo;
 import com.muyh.ldap.LdapService;
 import com.muyh.ldap.PersonRepoService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;

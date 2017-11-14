@@ -1,24 +1,18 @@
 package com.muyh.ldap;
 
-import com.muyh.entity.Person;
+import com.muyh.bean.Person;
 import com.muyh.mapper.PersonAttributeMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.ldap.NameNotFoundException;
 import org.springframework.ldap.NamingException;
 import org.springframework.ldap.core.AttributesMapper;
-import org.springframework.ldap.core.DirContextOperations;
 import org.springframework.ldap.core.DistinguishedName;
 import org.springframework.ldap.core.LdapTemplate;
-import org.springframework.ldap.core.support.AbstractContextMapper;
 import org.springframework.ldap.filter.AndFilter;
 import org.springframework.ldap.filter.EqualsFilter;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 
-import javax.naming.Name;
 import javax.naming.directory.*;
-import javax.naming.ldap.LdapName;
 import java.util.ArrayList;
 import java.util.List;
 

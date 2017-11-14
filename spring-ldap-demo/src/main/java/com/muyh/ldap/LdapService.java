@@ -1,6 +1,6 @@
 package com.muyh.ldap;
 
-import com.muyh.entity.Person;
+import com.muyh.bean.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ldap.core.AttributesMapper;
 import org.springframework.ldap.core.ContextMapper;

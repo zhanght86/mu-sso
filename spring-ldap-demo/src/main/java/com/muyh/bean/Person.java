@@ -1,4 +1,4 @@
-package com.muyh.entity;
+package com.muyh.bean;
 
 public class Person {
 

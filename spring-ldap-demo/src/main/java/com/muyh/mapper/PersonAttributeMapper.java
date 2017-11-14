@@ -1,6 +1,6 @@
 package com.muyh.mapper;
 
-import com.muyh.entity.Person;
+import com.muyh.bean.Person;
 import org.springframework.ldap.core.AttributesMapper;
 
 import javax.naming.NamingException;

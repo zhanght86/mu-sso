@@ -1,6 +1,6 @@
 package com.muyh.ldap;
 
-import com.muyh.entity.Person;
+import com.muyh.bean.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ldap.core.*;
 import org.springframework.ldap.core.support.AbstractContextMapper;
@@ -11,8 +11,6 @@ import org.springframework.ldap.support.LdapUtils;
 import org.springframework.stereotype.Service;
 
 import javax.naming.Name;
-import javax.naming.NamingException;
-import javax.naming.directory.*;
 import java.util.List;
 
 import static org.springframework.ldap.query.LdapQueryBuilder.query;
